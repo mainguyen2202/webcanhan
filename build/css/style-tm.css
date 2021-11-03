@@ -1,0 +1,43 @@
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+    color: #f15d30;
+}
+.img-fluid {
+    max-width: 90%;
+    max-height: 50%;
+    height: auto;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #f15d30;
+}
+.text-capitalize{
+    color: #f15d30;
+}
+.hidden-xs{
+    max-width: 2px;
+    max-height: 2px;
+}
+/* .third-content{
+    text-align: center;
+}
+.nav-tabs{
+    text-align: center;
+}
+.hidden-xs{
+    max-width: 4px;
+    max-height: 4px;
+}
+.img-responsive{
+    width: 4px;
+    height: 4px;
+} */
+
+
+
+
+
+
+
+
+
