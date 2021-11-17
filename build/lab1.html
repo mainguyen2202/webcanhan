@@ -23,6 +23,8 @@
 
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+
+
   <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="css/style-tm.css">
 </head>
@@ -91,6 +93,9 @@
                         <li class="nav-item"><a href="#lab4" class="nav-link" data-toggle="tab">Lab 4</a></li>
                       </ul>
                       <div class="tab-content">
+
+
+
                         <div class="tab-pane active" id="lab1">
                           <h1 class="text-center text-capitalize m-3">Lab 1</h1>
                           <div>
@@ -99,6 +104,7 @@
                                   data-toggle="tab">Requirement</a></li>
                               <li class="nav-item"><a href="#design" class="nav-link" data-toggle="tab">Design</a></li>
                               <li class="nav-item"><a href="#implement" class="nav-link" data-toggle="tab">Implement</a>
+
                               </li>
                             </ul>
                             <div class="tab-content">
@@ -169,14 +175,14 @@
                                         <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
                                             Design</strong></p><img src="https://19130025.tk/assets/img/lab1a.jpg"
                                           height="358" width="832" alt="paper"><button type="button"
-                                          class="btn btn-info" style="background: rgb(32, 201, 151);"><a
+                                          class="btn btn-info" style="background: #fd7e14"><a
                                             href="/assets/img/PaperDesign.jpg" download="lab1.png"
                                             style="color: white;">Download</a></button><br>
 
                                         <p style="text-decoration-color: darkblue;"><strong>Image of HTML
                                             Design</strong> </p><img src="https://19130025.tk/assets/img/lab1.png"
                                           height="358" width="832" alt="html"><button type="button" class="btn btn-info"
-                                          style="background: rgb(32, 201, 151);"><a href="/assets/img/designhtml.PNG"
+                                          style="background: #fd7e14"><a href="/assets/img/designhtml.PNG"
                                             download="lab1.png" style="color: white;">Download</a></button>
                                       </div>
                                     </div>
@@ -188,9 +194,326 @@
                               <div class="tab-pane" id="implement">
                                 <div class="mt-3 mb-2">
                                   <h3 class="text-secondary">Implement</h3>
-                                  <div>
+
+
+
+
+
+                                  <!-- Ngoai -->
+                                  <h1 class="text-center text-capitalize m-3">Quản Lý sản phẩm</h1>
+
+
+
+
+
+
+                                  <!-- <head> -->
+
+                                  <!-- <meta charset="utf-8">
+                                    <style type="text/css">
+                                      .panel {
+                                        width: 100%;
+                                        margin: 0 auto;
+                                        border: solid #4267b2 1px;
+                                      }
+
+                                      .panel-heading {
+                                        /* background-color: #4267b2; */
+                                        background-color: #fd7e14;
+                                        padding: 10px;
+                                        color: white;
+                                      }
+
+                                      .panel-body {
+                                        padding: 10px;
+                                      }
+
+                                      .panel-body label {
+                                        font-weight: bold;
+                                      }
+
+                                      .form-group {
+                                        display: block;
+                                        margin-bottom: 20px;
+                                      }
+
+                                      .form-control {
+                                        display: block;
+                                        width: 98%;
+
+                                        font-size: 16px;
+                                        margin-top: 10px;
+                                      }
+
+                                      .table {
+                                        width: 100%;
+                                      }
+
+                                      .table tr {
+                                        border-bottom: solid blue 1px;
+                                      }
+                                    </style> -->
+                                  <!-- </head> -->
+
+                                  <!-- <body> -->
+                                  <div class="panel">
+                                    <div class="panel-heading">
+                                      Input product detail information
+                                    </div>
+                                    <div class="panel-body">
+                                      <form method="post">
+                                        <div class="form-group">
+                                          <label>Product Name:</label>
+                                          <input type="number" name="index" id="index" value="" hidden="true">
+                                          <input class="form-control" type="text" name="product_name" id="product_name"
+                                            placeholder="Enter product name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Manufacturer Name:</label>
+                                          <select class="form-control" id="manuafaturer_name"
+                                            onchange="changeManufaturer()">
+                                            <option value="">-- Choose --</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Category Name:</label>
+                                          <select class="form-control" id="category_name">
+                                          </select>
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Price:</label>
+                                          <input class="form-control" type="number" name="price" id="price"
+                                            placeholder="Enter price" value="0" onkeyup="updateTotalPrice()">
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Quantity:</label>
+                                          <input class="form-control" type="text" name="quantity" id="quantity"
+                                            placeholder="Enter quantity" value="0" onkeyup="updateTotalPrice()">
+                                          <!-- <input class="form-control" type="text" name="quantity" id="quantity" placeholder="Enter quantity"  onkeyup="updateTotalPrice()"> -->
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Total Price:</label>
+                                          <input class="form-control" type="text" name="total_price" id="total_price"
+                                            value="0" disabled="true">
+                                        </div>
+                                        <div class="form-group">
+                                          <button class="btn btn-success" type="button" onclick="addProduct()">Add
+                                            Produce</button>
+                                          <button class="btn btn-danger" type="reset">Reset</button>
+
+
+
+
+                                          <!-- ngoaid -->
+                                          <!-- ngoai -->
+
+                                          <!-- <div class="d-flex align-items-center"> -->
+                                          <!-- <label class="form-label d-flex mb-0" for="search-field"
+    style="margin-right: 10px;"><svg class="svg-inline--fa fa-search fa-w-16"
+      aria-hidden="true" focusable="false" data-prefix="fa" data-icon="search"
+      role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+      data-fa-i2svg="">
+      <path fill="currentColor"
+        d="
+        M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 
+        0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+         0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z
+         "
+         >
+      </path>
+    </svg>
+    <i class="fa fa-search"></i>
+     Font Awesome fontawesome.com
+  </label> -->
+                                          <input class="form-control search-field" type="search" id="search-field"
+                                            name="search" style="width: 500px;height: 150px;">
+
+                                          <button class="btn btn-primary" type="button"
+                                            style="margin: 6px; border-radius: 5px; border-width: 1px;">Search</button>
+                                          <!-- </div> -->
+
+
+
+                                          <!-- ngoai -->
+                                          <!-- ngaoi -->
+
+
+                                        </div>
+
+
+
+                                      </form>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="panel" style="margin-top: 20px;">
+                                    <div class="panel-heading">
+                                      Product List
+                                    </div>
+                                    <div class="panel-body">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>No</th>
+                                            <th>Product Name</th>
+                                            <th>Manufacture Name</th>
+                                            <th>Category Name</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Total Price</th>
+                                            <th></th>
+                                            <th></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="result">
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+
+                                  <script type="text/javascript">
+                                    var manufactureList = {
+                                      "Apple": [
+                                        "IPhone 5", "IPhone 5s", "IPhone 12"
+                                      ],
+                                      "Sam Sung": [
+                                        "Galaxy S5", "Galaxy 10"
+                                      ],
+                                      "LG": [
+                                        "1", "2", "3"
+                                      ]
+                                    }
+
+                                    var productList = []
+
+                                    var manuafaturerTag = document.getElementById('manuafaturer_name')
+                                    for (var key in manufactureList) {
+                                      manuafaturerTag.innerHTML += `<option value='${key}'>${key}</option>`
+                                    }
+
+                                    function changeManufaturer() {
+                                      key = manuafaturerTag.value
+                                      categoryList = manufactureList[key]
+                                      console.log(categoryList)
+
+                                      var categoruTag = document.getElementById('category_name')
+                                      categoruTag.innerHTML = ''
+
+                                      if (categoryList != null) {
+                                        for (var i = 0; i < categoryList.length; i++) {
+                                          categoruTag.innerHTML += `<option value='${categoryList[i]}'>${categoryList[i]}</option>`
+                                        }
+                                      }
+                                    }
+
+                                    function updateTotalPrice() {
+                                      var price = document.getElementById('price').value
+                                      var quantity = document.getElementById('quantity').value
+
+                                      totalPrice = price * quantity
+
+                                      document.getElementById('total_price').value = totalPrice
+                                    }
+
+                                    var count = 0
+                                    function addProduct() {
+                                      var index = document.getElementById('index').value
+                                      var productName = document.getElementById('product_name').value
+                                      var manufactureName = document.getElementById('manuafaturer_name').value
+                                      var categoryName = document.getElementById('category_name').value
+                                      var price = document.getElementById('price').value
+                                      var quantity = document.getElementById('quantity').value
+                                      var totalPrice = document.getElementById('total_price').value
+
+                                      var product = {
+                                        'productName': productName,
+                                        'manufactureName': manufactureName,
+                                        'categoryName': categoryName,
+                                        'price': price,
+                                        'quantity': quantity,
+                                        'totalPrice': totalPrice
+                                      }
+
+                                      if (index != '') {
+                                        productList[index] = product
+                                        showProduct()
+                                        return;
+                                      }
+
+                                      productList.push(product)
+
+                                      document.getElementById('result').innerHTML += `<tr>
+						<td>${++count}</td>
+						<td>${productName}</td>
+						<td>${manufactureName}</td>
+						<td>${categoryName}</td>
+						<td>${price}</td>
+						<td>${quantity}</td>
+						<td>${totalPrice}</td>
+						<td><button class="btn btn-warning" onclick="editProduct(${count - 1})">Edit</button></td>
+						<td><button class="btn btn-danger" onclick="deleteProduct(${count - 1})">Delete</button></td>
+					</tr>`
+                                    }
+
+                                    function deleteProduct(index) {
+                                      console.log(index)
+                                      productList.splice(index, 1)
+                                      showProduct();
+                                    }
+
+                                    function showProduct() {
+                                      document.getElementById('result').innerHTML = ''
+
+                                      for (var i = 0; i < productList.length; i++) {
+                                        document.getElementById('result').innerHTML += `<tr>
+						<td>${i + 1}</td>
+						<td>${productList[i].productName}</td>
+						<td>${productList[i].manufactureName}</td>
+						<td>${productList[i].categoryName}</td>
+						<td>${productList[i].price}</td>
+						<td>${productList[i].quantity}</td>
+						<td>${productList[i].totalPrice}</td>
+						<td><button class="btn btn-warning" onclick="editProduct(${i})">Edit</button></td>
+						<td><button class="btn btn-danger" onclick="deleteProduct(${i})">Delete</button></td>
+					</tr>`
+                                      }
+                                    }
+
+                                    function editProduct(index) {
+                                      var product = productList[index]
+                                      console.log(product)
+                                      document.getElementById('index').value = index
+                                      document.getElementById('product_name').value = product.productName
+                                      document.getElementById('manuafaturer_name').value = product.manufactureName
+                                      changeManufaturer()
+                                      document.getElementById('category_name').value = product.categoryName
+                                      document.getElementById('price').value = product.price
+                                      document.getElementById('quantity').value = product.quantity
+                                      document.getElementById('total_price').value = product.totalPrice
+                                    }
+                                  </script>
+                                  <!-- </body> -->
+
+                                  <!-- Ngoai -->
+
+
+                                  <!-- <div>
                                     <div class="container border border-primary">
                                       <div style="margin-top: 50px; font-size: 20px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
                                         <form>
                                           <div class="form-group">
                                             <h1 class="text-center text-capitalize m-3">Quản Lý chi nhánh ngân hàng ACB
@@ -247,7 +570,15 @@
                                         </tbody>
                                       </table>
                                     </div>
-                                  </div>
+                                  </div> -->
+
+
+
+
+
+
+
+
                                 </div>
                               </div>
 
@@ -255,16 +586,26 @@
                             </div>
                           </div>
                         </div>
+
+
                         <div class="tab-pane" id="lab2">
                           <h1 class="text-center text-capitalize m-3">Lab 2</h1>
                           <div>
                             <ul class="nav nav-tabs nav-justified">
-                              <li class="nav-item"><a href="#requirement2" class="nav-link"
+
+                              <li class="nav-item"><a href="#requirement2" class="nav-link "
                                   data-toggle="tab">Requirement</a></li>
-                              <!-- <li class="nav-item"><a href="#user-scenario" class="nav-link" data-toggle="tab">User Scenario</a></li> -->
+                              <li class="nav-item"><a href="#user-scenario" class="nav-link active" data-toggle="tab">User
+                                  Scenario</a></li>
                               <li class="nav-item"><a href="#design2" class="nav-link" data-toggle="tab">Design</a></li>
-                              <li class="nav-item"><a href="#implement2" class="nav-link active"
-                                  data-toggle="tab">Implement</a></li>
+                              <li class="nav-item" role="presentation"><a class="nav-link" role="tab" target="_blank"
+                                  href="quanao.html">Implement</a></li>
+
+
+
+                                
+                              <!-- <li class="nav-item"><a href="#implement2" class="nav-link active" data-toggle="tab">Implement</a></li> -->
+
                             </ul>
                             <div class="tab-content">
                               <div class="tab-pane" id="requirement2">
@@ -293,478 +634,87 @@
                                   </ul>
                                 </div>
                               </div>
-                              <!-- <div class="tab-pane" id="user-scenario">
-            <div class="mt-3 mb-2">
-              <h3 class="text-secondary">User-Scenario</h3>
-              <p>Một khách hàng cần tìm khách sạn cho chuyến du lịch sắp tới</p><img src="assets/img/lab2a.png"
-                alt="paper" class="img-fluid">
-            </div>
-          </div> -->
+
+
+                              <div class="tab-pane active" id="user-scenario">
+                                <div class="mt-3 mb-2">
+                                  <h3 class="text-secondary">User-Scenario</h3>
+                                  <p>Một khách hàng cần tìm khách sạn cho chuyến du lịch sắp tới</p><img
+                                    src="assets/img/lab2a.png" alt="paper" class="img-fluid">
+                                </div>
+                              </div>
+
                               <div class="tab-pane" id="design2">
 
-                                <div class="tab-pane" role="tabpanel" id="tab-10">
-                                  <div class="designandresult">
-                                    <div class="designresult">
-                                      <p class="contentlab1"><b><u>User scenario</u></b></p>
+
+
+                                <div class="tab-pane" id="design">
+                                  <div class="mt-3 mb-2">
+                                    <h3 class="text-secondary">Design</h3>
+                                    <div id="accordion">
+                                      <div class="card">
+                                        <div label="design" class="tabcontent">
+                                          <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                              Design</strong></p><img src="https://19130066.tk/img/lab/anh_lab2_1p.png"
+                                            height="358" width="832" alt="paper"><button type="button"
+                                            class="btn btn-info" style="background: #fd7e14"><a
+                                              href="/assets/img/PaperDesign.jpg" download="lab1.png"
+                                              style="color: white;">Download</a></button><br>
+
+
+                                          <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                              Design</strong></p><img src="https://19130066.tk/img/lab/anh_lab2_2p.png"
+                                            height="358" width="832" alt="paper"><button type="button"
+                                            class="btn btn-info" style="background: #fd7e14"><a
+                                              href="/assets/img/PaperDesign.jpg" download="lab1.png"
+                                              style="color: white;">Download</a></button><br>
+
+                                          <p style="text-decoration-color: darkblue;"><strong>Image of HTML
+                                              Design</strong> </p><img src="https://19130066.tk/img/lab/anh_lab2_3p.png"
+                                            height="358" width="832" alt="html"><button type="button"
+                                            class="btn btn-info" style="background: #fd7e14"><a
+                                              href="/assets/img/designhtml.PNG" download="lab1.png"
+                                              style="color: white;">Download</a></button>
+
+
+
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="buttondown"><a target="_blank"
-                                        href="https://github.com/unlocker0808/PersonalWeb/blob/master/public/img/userScenario.png"><button
-                                          class="down">Download</button></a></div><img class="imgdesign"
-                                      src="https://19130066.tk/img/lab/anh_lab2_1p.png">
-                                    <hr width="100%">
-                                    <div class="designresult">
-                                      <p class="contentlab1"><b><u>Design</u></b></p>
-                                    </div>
-                                    <div class="buttondown"><a target="_blank"
-                                        href="https://github.com/unlocker0808/PersonalWeb/blob/master/public/img/lab2-paper.png"><button
-                                          class="down">Download</button></a></div><img class="imgdesign"
-                                      src="https://19130066.tk/img/lab/anh_lab2_2p.png">
-                                    <hr width="100%">
-                                    <div class="designresult">
-                                      <p class="contentlab1"><b><u>Result</u></b></p>
-                                    </div>
-                                    <div class="buttondown"><a target="_blank"
-                                        href="https://github.com/unlocker0808/PersonalWeb/blob/master/public/img/lab2-design.png"><button
-                                          class="down">Download</button></a></div><img class="imgdesign"
-                                      src="https://19130066.tk/img/lab/anh_lab2_3p.png">
                                   </div>
                                 </div>
 
 
 
-                                <!-- <div class="mt-3 mb-2">
-              <h3 class="text-secondary">Design</h3><img src="assets/img/lab2.jpg" alt="paper" class="img-fluid">
-            </div> -->
+
+                               
 
                               </div>
 
 
-                              <div class="tab-pane active" id="implement2">
+                              <!-- <div class="tab-pane active" id="implement2">
                                 <div class="mt-3 mb-2">
-                                  <!-- <h3 class="text-secondary">Implement</h3>
-              <div class="embed-responsive embed-responsive-4by3"><iframe class="center"
-                  src="https://webdancover.web.app/" height="700" width="1000" title="Iframe Example"></iframe></div> -->
-
-                                  <div class="tab-pane" role="tabpanel" id="tab-11">
-                                    <div class="bootstrap-iso">
-                                      <div class="wrapper">
-                                        <div class="container">
-                                          <div class="row" style="width: 1050px;">
-                                            <div class="col-md-10 col-md-1 product">
-                                              <div class="row">
-
-
-
-
-                                                <div class="wizard-card ct-wizard-orange" id="wizardProperty">
-                                                  <form>
-                                                    <div class="wizard-header">
-                                                      <h3><b>Checkout</b> YOUR CARTS <br><small>Make sure your form all
-                                                          filled out..</small>
-                                                      </h3>
-                                                    </div>
-                                                    <ul class="nav nav-pills">
-                                                      <li class="active" style="width: 33.3333%;"><a href="#step1"
-                                                          data-toggle="tab" aria-expanded="true">Step 1 </a></li>
-                                                      <li style="width: 33.3333%;"><a href="#step2" data-toggle="tab"
-                                                          aria-expanded="true">Step 2 </a>
-                                                      </li>
-                                                      <li style="width: 33.3333%;"><a href="#step3" data-toggle="tab"
-                                                          aria-expanded="true">Step 3 </a>
-                                                      </li>
-                                                    </ul>
-
-                                                    <div class="tab-content">
-                                                      <div class="tab-pane active" id="step1">
-                                                        <div class="container" style="width: 99%;">
-                                                          <table id="cart" class="table table-hover table-condensed">
-                                                            <thead>
-                                                              <tr>
-                                                                <th style="width: 50%;">Product</th>
-                                                                <th style="width: 10%;">Price</th>
-                                                                <th style="width: 8%;">Quantity</th>
-                                                                <th class="text-center" style="width: 22%;">Subtotal
-                                                                </th>
-                                                                <th style="width: 10%;"></th>
-                                                              </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                              <tr>
-                                                                <td data-th="Product">
-                                                                  <div class="row">
-                                                                    <!-- <div class="col-sm-2 hidden-xs"><img
-                                                                        src="https://i2.wp.com/homecoffee.com.vn/wp-content/uploads/2021/09/171026-better-coffee-boost-se-329p.jpg?fit=1024%2C512&ssl=1"
-                                                                        alt="..." class="img-responsive"></div> -->
-                                                                    <div class="col-sm-10">
-                                                                      <h4 class="nomargin">Latte</h4>
-                                                                      <p>Bắt nguồn từ Ý, latte là café với nhiều sữa. Do
-                                                                        lớp sữa nhiều, nghệ
-                                                                        nhân latte có
-                                                                        thể sử dụng chính động tác đổ sữa để tạo nên
-                                                                        những hình ảnh đẹp mắt
-                                                                        trên bề mặt
-                                                                        tách café.</p>
-                                                                    </div>
-                                                                  </div>
-                                                                </td>
-                                                                <td data-th="Price">$1.99</td>
-                                                                <td data-th="Quantity"><input type="number"
-                                                                    class="form-control text-center" value="1">
-                                                                </td>
-                                                                <td data-th="Subtotal" class="text-center">1.99</td>
-                                                                <td class="actions" data-th="true"><button
-                                                                    class="btn btn-info btn-sm"><i
-                                                                      class="fa fa-refresh"></i></button><button
-                                                                    class="btn btn-danger btn-sm"><i
-                                                                      class="fa fa-trash-o"></i></button>
-                                                                </td>
-                                                              </tr>
-                                                            </tbody>
-                                                            <tfoot>
-                                                              <!-- <tr class="visible-xs">
-                                                                <td class="text-center"><strong>Total 1.99</strong></td>
-                                                              </tr> -->
-                                                              <tr>
-                                                                <td><a href="#" class="btn btn-warning"><i
-                                                                      class="fa fa-angle-left"></i>
-                                                                    Continue
-                                                                    Shopping</a></td>
-                                                                <td colspan="2" class="hidden-xs"></td>
-                                                                <td class="hidden-xs text-center"><strong>Total
-                                                                    $1.99</strong></td>
-                                                              </tr>
-                                                            </tfoot>
-                                                          </table>
-                                                        </div>
-                                                      </div>
-                                                      <div class="tab-pane" id="step2">
-                                                        <div class="panel-body"><b>Help us keep your account safe and
-                                                            secure, please verify
-                                                            your billing
-                                                            information.</b><br><br>
-                                                          <table class="table table-striped" style="font-weight: bold;">
-                                                            <tbody>
-                                                              <tr>
-                                                                <td style="width: 175px;"><label
-                                                                    for="id_first_name">First name:</label>
-                                                                </td>
-                                                                <td><input class="form-control" id="id_first_name"
-                                                                    name="first_name" type="text"></td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td style="width: 175px;"><label for="id_last_name">Last
-                                                                    name:</label></td>
-                                                                <td><input class="form-control" id="id_last_name"
-                                                                    name="last_name" type="text"></td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td style="width: 175px;"><label>Email:</label></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td style="width: 175px;"><label
-                                                                    for="id_address_line_1">Address:</label>
-                                                                </td>
-                                                                <td><input class="form-control" id="id_address_line_1"
-                                                                    name="address_line_1" type="text">
-                                                                </td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td style="width: 175px;"><label
-                                                                    for="id_postalcode">Postalcode:</label>
-                                                                </td>
-                                                                <td><input class="form-control" id="id_postalcode"
-                                                                    name="postalcode" type="text"></td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td style="width: 175px;"><label
-                                                                    for="id_phone">Phone:</label></td>
-                                                                <td><input class="form-control" id="id_phone"
-                                                                    name="phone" type="text"></td>
-                                                              </tr>
-                                                            </tbody>
-                                                          </table>
-
-                                                          <div class="wizard-footer">
-
-                                                            <div class="pull-right"><input type="button"
-                                                                class="btn btn-next btn-primary" name="next"
-                                                                value="Next"><input type="button"
-                                                                class="btn btn-finish btn-primary " name="finish"
-                                                                value="Finish" style="display: none;">
-                                                               
-                                                              </div>
-      
-      
-                                                            <div class="pull-left"><input type="button"
-                                                                class="btn btn-previous btn-default disabled" name="previous"
-                                                                value="Previous"
-                                                                style="background: rgb(240, 173, 78); color: white;"></div>
-                                                            <div class="clearfix"></div>
-                                                          </div>
-                                                          
-                                                        </div>
-                                                      </div>
-                                                      <div class="tab-pane" id="step3">
-                                                        <div class="panel-body"><span class="payment-errors"></span>
-                                                          <fieldset>
-                                                            <legend>What method would you like to pay with today?
-                                                            </legend>
-                                                            <div class="form-group"><label
-                                                                class="col-sm-3 control-label"
-                                                                for="card-holder-name">Name on
-                                                                Card</label>
-                                                              <div class="col-sm-9"><input type="text"
-                                                                  class="form-control" stripe-data="name"
-                                                                  id="name-on-card" placeholder="Card Holder's Name">
-                                                              </div>
-                                                            </div>
-                                                            <div class="form-group"><label
-                                                                class="col-sm-3 control-label" for="card-number">Card
-                                                                Number</label>
-                                                              <div class="col-sm-9"><input type="text"
-                                                                  class="form-control" stripe-data="number"
-                                                                  id="card-number"
-                                                                  placeholder="Debit/Credit Card Number"><br>
-                                                                <div><img class="pull-right"
-                                                                    src="https://s3.amazonaws.com/hiresnetwork/imgs/cc.png"
-                                                                    style="max-width: 250px; padding-bottom: 20px;">
-                                                                </div>
-                                                              </div>
-                                                              <div class="form-group"><label
-                                                                  class="col-sm-3 control-label"
-                                                                  for="expiry-month">Expiration
-                                                                  Date</label>
-                                                                <div class="col-sm-9">
-                                                                  <div class="row">
-                                                                    <div class="col-xs-3"><select class="form-control "
-                                                                        data-stripe="exp-month" id="card-exp-month"
-                                                                        style="margin-left: 5px;">
-                                                                        <option>Month</option>
-                                                                        <option value="01">Jan (01)</option>
-                                                                        <option value="02">Feb (02)</option>
-                                                                        <option value="03">Mar (03)</option>
-                                                                        <option value="04">Apr (04)</option>
-                                                                        <option value="05">May (05)</option>
-                                                                        <option value="06">June (06)</option>
-                                                                        <option value="07">July (07)</option>
-                                                                        <option value="08">Aug (08)</option>
-                                                                        <option value="09">Sep (09)</option>
-                                                                        <option value="10">Oct (10)</option>
-                                                                        <option value="11">Nov (11)</option>
-                                                                        <option value="12">Dec (12)</option>
-                                                                      </select></div>
-                                                                    <div class="col-xs-3"><select class="form-control"
-                                                                        data-stripe="exp-year" id="card-exp-year">
-                                                                        <option value="2019">2019</option>
-                                                                        <option value="2020">2020</option>
-                                                                        <option value="2021">2021</option>
-                                                                        <option value="2022">2022</option>
-                                                                        <option value="2023">2023</option>
-                                                                        <option value="2024">2024</option>
-                                                                      </select></div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-                                                              <div class="form-group"><label
-                                                                  class="col-sm-3 control-label" for="cvv">Card
-                                                                  CVC</label>
-                                                                <div class="col-sm-3"
-                                                                  style="margin-top: 5px; margin-left: 5px;"><input
-                                                                    type="text" class="form-control" stripe-data="cvc"
-                                                                    id="card-cvc" placeholder="Security Code">
-                                                                </div>
-                                                              </div>
-                                                              <div class="form-group">
-                                                                <div class="col-sm-offset-3 col-sm-9"></div>
-                                                              </div>
-                                                            </div>
-                                                          </fieldset><button type="submit"
-                                                            class="btn btn-success btn-lg"
-                                                            style="width: 100%; margin-top: 10px;">Pay Now</button><br>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-
-
-                                                    <div class="wizard-footer">
-
-                                                      <div class="pull-right"><input type="button"
-                                                          class="btn btn-next btn-primary" name="next"
-                                                          value="Next"><input type="button"
-                                                          class="btn btn-finish btn-primary " name="finish"
-                                                          value="Finish" style="display: none;">
-                                                          <a href="#step3" data-toggle="tab"
-                                                          aria-expanded="true"> </a>
-                                                        </div>
-
-
-                                                      <div class="pull-left"><input type="button"
-                                                          class="btn btn-previous btn-default disabled" name="previous"
-                                                          value="Previous"
-                                                          style="background: rgb(240, 173, 78); color: white;"></div>
-                                                      <div class="clearfix"></div>
-                                                    </div>
-
-
-
-                                                  </form>
-                                                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                <!-- <div class="col-md-7">
-    
-                                  <div class="product-image">
-                                    <div class="image img-fluid"></div>
-                                  </div> -->
-
-                                                <!-- <div class="row product-thumbnails"><img class="img-fluid img-thumbnail col-md-3"
-                                      alt="&quot;" src="img/ipWhite.png"><img class="img-fluid img-thumbnail col-md-3"
-                                      alt="&quot;" src="img/ipBlue.png"><img class="img-fluid img-thumbnail col-md-3"
-                                      alt="&quot;" src="img/ipGray.png"><img class="img-fluid img-thumbnail col-md-3"
-                                      alt="&quot;" src="img/ipPink.png"></div> -->
-                                                <!-- </div> -->
-                                                <!-- <div class="col-md-5">
-                                  <div class="product-details">
-                                    <h2><strong>iPhone 12 Pro Max</strong><br></h2>
-                                    <table classname="table">
-                                      <tbody>
-                                        <tr>
-                                          <td style="padding-right: 50px;">Màn hình:</td>
-                                          <td>OLED, 6.7", Super Retina XDR</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Hệ điều hành:</td>
-                                          <td>iOS 14</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Camera sau:</td>
-                                          <td>3 camera 12 MP</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Camera trước:</td>
-                                          <td>12 MP</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Chip:</td>
-                                          <td>Apple A14 Bionic</td>
-                                        </tr>
-                                        <tr>
-                                          <td>RAM:</td>
-                                          <td>6 GB</td>
-                                        </tr>
-                                        <tr>
-                                          <td>SIM:</td>
-                                          <td>1 Nano SIM &amp; 1 eSIM, Hỗ trợ 5G</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                  <div>
-                                    <div class="container">
-                                      <div class="row">
-                                        <div class="col-md-6" style="padding-left: 0px;">
-                                          <div>
-                                            <p>Bộ nhớ trong:
-                                            <p></p>
-                                            </p>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-6"><select>
-                                            <option value="64" style="color: black;">64GB</option>
-                                            <option value="128" style="color: black;">128GB</option>
-                                            <option value="256" style="color: black;">256GB</option>
-                                            <option value="512" style="color: black;">512GB</option>
-                                          </select></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <div class="container">
-                                      <div class="row">
-                                        <div class="col-md-6" style="padding-left: 0px;">
-                                          <div>
-                                            <p>Màu:
-                                            <p></p>
-                                            </p>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-6"><button
-                                            style="background-color: white; width: 25px; height: 25px;"></button><button
-                                            style="background-color: pink; width: 25px; height: 25px;"></button><button
-                                            style="background-color: gray; width: 25px; height: 25px;"></button><button
-                                            style="background-color: blue; width: 25px; height: 25px;"></button></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <div class="container">
-                                      <div class="row">
-                                        <div class="col-md-6" style="padding-left: 0px;">
-                                          <div>
-                                            <p>Số lượng:
-                                            <p></p>
-                                            </p>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-6"><select>
-                                            <option value="1" style="color: black;">1</option>
-                                            <option value="2" style="color: black;">2</option>
-                                          </select></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div style="text-align: center;"><button type="button" class="btn btn-secondary">Mua
-                                      ngay</button><button type="button" class="btn btn-success">Thêm vào giỏ hàng</button>
-                                  </div>
-                                </div> -->
-
-
-
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                 
 
 
                                 </div>
-                              </div>
+                              </div> -->
+
+
+
                             </div>
                           </div>
                         </div>
+
+
                         <div class="tab-pane" id="lab3">
                           <h1 class="text-center text-capitalize m-3">Lab 3</h1>
                           <div>
                             <ul class="nav nav-tabs nav-justified">
-                              <li class="nav-item"><a href="#requirement3" class="nav-link"
+                              <li class="nav-item"><a href="#requirement3" class="nav-link active"
                                   data-toggle="tab">Requirement</a></li>
                               <li class="nav-item"><a href="#ex1" class="nav-link" data-toggle="tab">Ex1</a></li>
-                              <li class="nav-item"><a href="#ex2" class="nav-link active" data-toggle="tab">Ex2</a></li>
+                              <li class="nav-item"><a href="#ex2" class="nav-link " data-toggle="tab">Ex2</a></li>
                             </ul>
                             <div class="tab-content">
                               <div class="tab-pane" id="requirement3">
@@ -809,8 +759,38 @@
                                     <div class="tab-content">
                                       <div class="tab-pane active" id="design31">
                                         <div class="mt-3 mb-2">
-                                          <h3 class="text-secondary">Design</h3><img src="https://19130025.tk/assets/img/lab3a.jpg"
-                                            alt="paper">
+                                          <h3 class="text-secondary">Design</h3>
+                                          <!-- <img
+                                            src="https://19130025.tk/assets/img/lab3a.jpg" alt="paper"> -->
+
+
+                                          <div class="tab-pane" id="design">
+                                            <div class="mt-3 mb-2">
+                                              <h3 class="text-secondary">Design</h3>
+                                              <div id="accordion">
+                                                <div class="card">
+                                                  <div label="design" class="tabcontent">
+                                                    <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                                        Design</strong></p><img
+                                                      src="https://19130025.tk/assets/img/lab3a.jpg" height="358"
+                                                      width="832" alt="paper"><button type="button" class="btn btn-info"
+                                                      style="background: #fd7e14"><a href="/assets/img/PaperDesign.jpg"
+                                                        download="lab1.png"
+                                                        style="color: white;">Download</a></button><br>
+
+
+
+
+
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+
+
                                         </div>
                                       </div>
                                       <div class="tab-pane" id="implement31">
@@ -837,8 +817,40 @@
                                     <div class="tab-content">
                                       <div class="tab-pane active" id="design32">
                                         <div class="mt-3 mb-2">
-                                          <h3 class="text-secondary">Design</h3><img src="https://19130025.tk/assets/img/lab3b.jpg"
-                                            alt="paper" class="img-fluid">
+                                          <h3 class="text-secondary">Design</h3>
+                                          <!-- <img
+                                            src="https://19130025.tk/assets/img/lab3b.jpg" alt="paper"
+                                            class="img-fluid"> -->
+
+
+
+
+                                          <div class="tab-pane" id="design">
+                                            <div class="mt-3 mb-2">
+                                              <h3 class="text-secondary">Design</h3>
+                                              <div id="accordion">
+                                                <div class="card">
+                                                  <div label="design" class="tabcontent">
+                                                    <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                                        Design</strong></p><img
+                                                      src="https://19130025.tk/assets/img/lab3b.jpg" height="358"
+                                                      width="832" alt="paper"><button type="button" class="btn btn-info"
+                                                      style="background: #fd7e14"><a href="/assets/img/PaperDesign.jpg"
+                                                        download="lab1.png"
+                                                        style="color: white;">Download</a></button><br>
+
+
+
+
+
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+
                                         </div>
                                       </div>
                                       <div class="tab-pane" id="implement32">
@@ -855,14 +867,18 @@
                             </div>
                           </div>
                         </div>
+
+
+
+
                         <div class="tab-pane" id="lab4">
                           <h1 class="text-center text-capitalize m-3">Lab 4</h1>
                           <div>
                             <ul class="nav nav-tabs nav-justified">
-                              <li class="nav-item"><a href="#requirement4" class="nav-link"
+                              <li class="nav-item"><a href="#requirement4" class="nav-link active"
                                   data-toggle="tab">Requirement</a></li>
                               <li class="nav-item"><a href="#design4" class="nav-link" data-toggle="tab">Design</a></li>
-                              <li class="nav-item"><a href="#implement4" class="nav-link active"
+                              <li class="nav-item"><a href="#implement4" class="nav-link"
                                   data-toggle="tab">Implement</a></li>
                             </ul>
                             <div class="tab-content">
@@ -885,8 +901,36 @@
                               </div>
                               <div class="tab-pane" id="design4">
                                 <div class="mt-3 mb-2">
-                                  <h3 class="text-secondary">Design</h3><img src="https://19130066.tk/img/lab/anh_lab4_1p.jpg" alt="paper"
-                                    class="img-fluid">
+                                  <h3 class="text-secondary">Design</h3>
+
+
+
+
+
+                                  <div class="tab-pane" id="design">
+                                    <div class="mt-3 mb-2">
+                                      <h3 class="text-secondary">Design</h3>
+                                      <div id="accordion">
+                                        <div class="card">
+                                          <div label="design" class="tabcontent">
+                                            <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                                Design</strong></p><img
+                                              src="https://19130066.tk/img/lab/anh_lab4_1p.jpg" height="358" width="832"
+                                              alt="paper"><button type="button" class="btn btn-info"
+                                              style="background: #fd7e14"><a href="/assets/img/PaperDesign.jpg"
+                                                download="lab1.png" style="color: white;">Download</a></button><br>
+
+
+
+
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- <img
+                                    src="https://19130066.tk/img/lab/anh_lab4_1p.jpg" alt="paper" class="img-fluid"> -->
                                 </div>
                               </div>
                               <div class="tab-pane active" id="implement4">
@@ -903,7 +947,7 @@
                     </div>
 
 
-                  
+
 
 
 
@@ -1040,6 +1084,10 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
+
+  <!-- them quần áo -->
+  <!-- <script src="script.js"></script> -->
+  <!-- them quần áo -->
 </body>
 
 </html>
