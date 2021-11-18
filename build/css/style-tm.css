@@ -1,23 +1,27 @@
-.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+.ftco-navbar-light .navbar-nav>.nav-item.active>a {
   color: #f15d30;
 }
+
 .img-fluid {
   max-width: 90%;
   max-height: 50%;
   height: auto;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
   background-color: #f15d30;
 }
-.text-capitalize{
+
+.text-capitalize {
   color: #f15d30;
 }
-.hidden-xs{
+
+.hidden-xs {
   max-width: 2px;
   max-height: 2px;
 }
+
 /* .third-content{
   text-align: center;
 }
@@ -34,8 +38,8 @@
 } */
 
 
-.text-uppercase{
-  color: #f15d30; 
+.text-uppercase {
+  color: #f15d30;
 }
 
 
@@ -81,31 +85,37 @@
 }
 
 .table tr {
- 
+
   border-bottom: solid #ddd 1px;
 }
-.btn-success{
+
+.btn-success {
   background-color: #fd7e14;
- 
+
 }
-.btn-danger{
+
+.btn-danger {
   background-color: #fd7e14;
 }
-.btn-warning{
+
+.btn-warning {
   color: #fff;
 }
 
 /* quna ly san pham */
-.coffee{
+.coffee {
   text-align: center;
 }
-.muahang{
+
+.muahang {
   text-align: right;
 }
-.btn-warning{
+
+.btn-warning {
   background-color: #fd7e14;
 }
-.btn-primary1{
+
+.btn-primary1 {
   background-color: #fd7e14;
   color: #fff;
 }
@@ -122,104 +132,122 @@
 /* -----------Lab2 quần áo----------------- */
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
- }
- .container{
-     max-width: 1000px;
-     
-     margin: auto;
- }
- .product-items{
-   height: 350px;
-     display: flex;
-     justify-content: space-between;
-     background-color: #fd7e14;
-    
-     padding: 12px;
-     
- }
- .product-item{
-     width: 19%;
-     
-    
-  
-     background-color: rgb(255, 255, 255);
-     padding: 12px;
-     text-align: center;
- }
- .product-item img{
-     width: 100%;
-    margin-bottom: 20px;
- }
- .product-item-text{
-    display: flex;
-    justify-content: space-between;
- }
- .product-item button{
-     margin-top: 12px;
-     height: 40px;
-     width: 100px;
-     padding: 0 12px;
-     cursor: pointer;
-     border: none;
-     border-radius: 5px;
-     transition: all 0.3s ease;
-     
- }
- .product-item button:hover{
-  
-     background-color: #fd7e14;
- }
+
+}
+
+.container {
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+.product-items {
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fd7e14;
+
+  padding: 12px;
+
+}
+
+.product-item {
+  width: 19%;
 
 
 
- /* cart---------------------------------- */
- .cart {
-     width: 50%;
-     margin: auto;
-     text-align: center;
-     padding-top: 30px;
-  }
-  .panel-heading{
-    text-align: left;
-  }
-  .cart h2{
-  margin-bottom: 20px ;
-  
-  }
-  .cart table{
-      width: 100%;
-     
-     
-  }
-  
- 
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  text-align: center;
+}
 
- .cart table thead tr th:first-child{
-     text-align: left;
- }
+.product-item img {
+  width: 100% !important;
+  height: 50% !important;
+  margin-bottom: 20px;
+}
 
- .cart table tr td{
-/* border-bottom: 1px solid #ddd; */
+.product-item-text {
+  display: block;
+  justify-content: space-between;
+}
 
-     padding: 12px 0;
- }
+.product-item-text h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
+.product-item button {
+  margin-top: 12px;
+  height: 40px;
+  width: 100px;
+  padding: 0 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 
- .cart table thead tr th:last-child{
-     text-align: right;
- }
- .cart table tbody tr th:last-child{
-     text-align: right;
- }
- /* ------------------sẽ giúp cart nằm bên phải------------------- */
+}
+
+.product-item button:hover {
+
+  background-color: #fd7e14;
+}
 
 
- /* .cart{
+
+/* cart---------------------------------- */
+.cart {
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.panel-heading {
+  text-align: left;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+
+}
+
+.cart table {
+  width: 100%;
+
+
+}
+
+
+
+.cart table thead tr th:first-child {
+  text-align: left;
+}
+
+.cart table tr td {
+  /* border-bottom: 1px solid #ddd; */
+
+  padding: 12px 0;
+}
+
+
+.cart table thead tr th:last-child {
+  text-align: right;
+}
+
+.cart table tbody tr th:last-child {
+  text-align: right;
+}
+
+/* ------------------sẽ giúp cart nằm bên phải------------------- */
+
+
+/* .cart{
      position: fixed;
      height: 100vh;
      width: 400px;
@@ -230,10 +258,10 @@
      overflow: scroll;
      right: -100%;
  } */
- /* thêm 1 số button */
- .cart button{
+/* thêm 1 số button */
+.cart button {
   margin-top: 12px;
- 
+
   height: 40px;
   padding: 0 20px;
   cursor: pointer;
@@ -241,10 +269,10 @@
   border-radius: 5px;
   background-color: #fd7e14;
   color: #fff;
- 
-  
- }
- 
+
+
+}
+
 /* .cart-icon{
   cursor: pointer;
 }
@@ -301,3 +329,12 @@
   .container1, .container1-sm, .container1-md, .container1-lg, .container1-xl {
     max-width: 1140px; } } */
 /* -------------------------- */
+
+/* -------start lab1 download-------- */
+.btn-info {
+  background: #fd7e14 !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* -------end lab1 download-------- */
