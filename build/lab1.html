@@ -172,7 +172,8 @@
                                   <div id="accordion">
                                     <div class="card">
                                       <div label="design" class="tabcontent">
-                                        <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+
+                                        <!-- <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
                                             Design</strong></p><img src="https://19130025.tk/assets/img/lab1a.jpg"
                                           height="358" width="832" alt="paper"><button type="button"
                                           class="btn btn-info" style="background: #fd7e14"><a
@@ -183,7 +184,38 @@
                                             Design</strong> </p><img src="https://19130025.tk/assets/img/lab1.png"
                                           height="358" width="832" alt="html"><button type="button" class="btn btn-info"
                                           style="background: #fd7e14"><a href="/assets/img/designhtml.PNG"
-                                            download="lab1.png" style="color: white;">Download</a></button>
+                                            download="lab1.png" style="color: white;">Download</a></button> -->
+
+
+                                            <!-- <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                              Design</strong></p><img src="https://f13.photo.talk.zdn.vn/325126379474840378/11f5df7610cfd89181de.jpg"
+                                            height="900" width="832"
+                                             alt="paper"><button type="button"
+                                            class="btn btn-info" style="background: #fd7e14"><a
+                                              href="images/lab1_1.jpgad="lab1-1.png"
+                                            style="color: white;">Download</a></button><br> -->
+
+                                              <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                                Design</strong></p><img src="images/lab1_1.jpg"
+                                              width="832"
+                                               alt="paper"><button type="button"
+                                              class="btn btn-info" style="background: #fd7e14"><a
+                                                href="https://f13.photo.talk.zdn.vn/325126379474840378/11f5df7610cfd89181de.jpg"download="llab1-1.png"
+                                                style="color: white;">Download</a></button><br>
+  
+                                          <!-- <p style="text-decoration-color: darkblue;"><strong>Image of HTML
+                                              Design</strong> </p><img src="https://f9.photo.talk.zdn.vn/3214185561052682326/23d2725ebde775b92cf6.jpg"
+                                            height="900" width="832" 
+                                            alt="html"><button type="button" class="btn btn-info"
+                                            style="background: #fd7e14"><a href="images/lab1_2.png"
+                                              download="lab1-2.png" style="color: white;">Download</a></button> -->
+
+                                              <p style="text-decoration-color: darkblue;"><strong>Image of HTML
+                                                Design</strong> </p><img src="images/lab1_2.png"
+                                               width="832" 
+                                              alt="html"><button type="button" class="btn btn-info"
+                                              style="background: #fd7e14"><a href="https://f12.photo.talk.zdn.vn/2203267982598014419/24232177e9cd219378dc.jpg"
+                                                download="lab1-2.png" style="color: white;">Download</a></button>
                                       </div>
                                     </div>
                                   </div>
@@ -283,12 +315,13 @@
                                         <div class="form-group">
                                           <label>Price:</label>
                                           <input class="form-control" type="number" name="price" id="price"
-                                            placeholder="Enter price" value="0" onkeyup="updateTotalPrice()">
+                                            placeholder="Enter price" value="0" min="1000000"  onkeyup="updateTotalPrice()">
                                         </div>
                                         <div class="form-group">
                                           <label>Quantity:</label>
                                           <input class="form-control" type="text" name="quantity" id="quantity"
-                                            placeholder="Enter quantity" value="0" onkeyup="updateTotalPrice()">
+                                        
+                                            placeholder="Enter quantity" value=" " onkeyup="updateTotalPrice()">
                                           <!-- <input class="form-control" type="text" name="quantity" id="quantity" placeholder="Enter quantity"  onkeyup="updateTotalPrice()"> -->
                                         </div>
                                         <div class="form-group">
@@ -309,6 +342,9 @@
 
                                           <!-- <div class="d-flex align-items-center"> -->
                                           <!-- <label class="form-label d-flex mb-0" for="search-field"
+
+
+
     style="margin-right: 10px;"><svg class="svg-inline--fa fa-search fa-w-16"
       aria-hidden="true" focusable="false" data-prefix="fa" data-icon="search"
       role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
@@ -326,10 +362,10 @@
      Font Awesome fontawesome.com
   </label> -->
                                           <input class="form-control search-field" type="search" id="search-field"
-                                            name="search" style="width: 500px;height: 150px;">
+                                            name="search" style="width: 500px;height: 150px;" >
 
-                                          <button class="btn btn-primary" type="button"
-                                            style="margin: 6px; border-radius: 5px; border-width: 1px;">Search</button>
+                                          <button class="btn btn-primary1" type="button"
+                                            style="margin: 6px; border-radius: 5px; border-width: 1px; background-color: #fd7e14;">Search</button>
                                           <!-- </div> -->
 
 
@@ -354,12 +390,12 @@
                                     <div class="panel-body">
                                       <table class="table">
                                         <thead>
-                                          <tr>
+                                          <tr >
                                             <th>No</th>
                                             <th>Product Name</th>
                                             <th>Manufacture Name</th>
                                             <th>Category Name</th>
-                                            <th>Price</th>
+                                            <th >Price</th>
                                             <th>Quantity</th>
                                             <th>Total Price</th>
                                             <th></th>
@@ -395,7 +431,9 @@
                                     function changeManufaturer() {
                                       key = manuafaturerTag.value
                                       categoryList = manufactureList[key]
+
                                       console.log(categoryList)
+                                      //để xem
 
                                       var categoruTag = document.getElementById('category_name')
                                       categoruTag.innerHTML = ''
@@ -598,6 +636,8 @@
                               <li class="nav-item"><a href="#user-scenario" class="nav-link active" data-toggle="tab">User
                                   Scenario</a></li>
                               <li class="nav-item"><a href="#design2" class="nav-link" data-toggle="tab">Design</a></li>
+
+                              
                               <li class="nav-item" role="presentation"><a class="nav-link" role="tab" target="_blank"
                                   href="quanao.html">Implement</a></li>
 
@@ -639,8 +679,9 @@
                               <div class="tab-pane active" id="user-scenario">
                                 <div class="mt-3 mb-2">
                                   <h3 class="text-secondary">User-Scenario</h3>
-                                  <p>Một khách hàng cần tìm khách sạn cho chuyến du lịch sắp tới</p><img
-                                    src="assets/img/lab2a.png" alt="paper" class="img-fluid">
+                                  <!-- <p>Một khách hàng cần tìm khách sạn cho chuyến du lịch sắp tới</p> -->
+                                  <img
+                                    src="images/lab2-US.png" alt="paper" class="img-fluid" >
                                 </div>
                               </div>
 
@@ -654,29 +695,40 @@
                                     <div id="accordion">
                                       <div class="card">
                                         <div label="design" class="tabcontent">
-                                          <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
-                                              Design</strong></p><img src="https://19130066.tk/img/lab/anh_lab2_1p.png"
-                                            height="358" width="832" alt="paper"><button type="button"
+                                          <!-- <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                              Design</strong></p><img src="https://f10.photo.talk.zdn.vn/8134598079100714195/128252f2dd4815164c59.jpg"
+                                            height="500" width="832"
+                                             alt="paper"><button type="button"
                                             class="btn btn-info" style="background: #fd7e14"><a
-                                              href="/assets/img/PaperDesign.jpg" download="lab1.png"
-                                              style="color: white;">Download</a></button><br>
+                                              href="images/lab2_1.jpg" download="lab1.png"
+                                              style="color: white;">Download</a></button><br> -->
 
+                                              <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
+                                                Design</strong></p><img src="images/lab2_1.jpg"
+                                               width="832"
+                                               alt="paper"><button type="button"
+                                              class="btn btn-info" style="background: #fd7e14"><a
+                                                href="https://f10.photo.talk.zdn.vn/8134598079100714195/128252f2dd4815164c59.jpg" download="lab2_1.png"
+                                                style="color: white;">Download</a></button><br>
+  
 
-                                          <p style="text-decoration-color: darkblue;"> <strong>Image of Paper
-                                              Design</strong></p><img src="https://19130066.tk/img/lab/anh_lab2_2p.png"
-                                            height="358" width="832" alt="paper"><button type="button"
+                                         
+
+                                          <!-- <p style="text-decoration-color: darkblue;"><strong>Image of HTML
+                                              Design</strong> </p><img src="https://f18-zpc.zdn.vn/4926075736511189538/7308d8cf6575ad2bf464.jpg"
+                                            height="500" width="832" 
+                                            alt="html"><button type="button"
                                             class="btn btn-info" style="background: #fd7e14"><a
-                                              href="/assets/img/PaperDesign.jpg" download="lab1.png"
-                                              style="color: white;">Download</a></button><br>
+                                              href="images/lab2_2.png" download="lab1.png"
+                                              style="color: white;">Download</a></button> -->
 
-                                          <p style="text-decoration-color: darkblue;"><strong>Image of HTML
-                                              Design</strong> </p><img src="https://19130066.tk/img/lab/anh_lab2_3p.png"
-                                            height="358" width="832" alt="html"><button type="button"
-                                            class="btn btn-info" style="background: #fd7e14"><a
-                                              href="/assets/img/designhtml.PNG" download="lab1.png"
-                                              style="color: white;">Download</a></button>
-
-
+                                              <p style="text-decoration-color: darkblue;"><strong>Image of HTML
+                                                Design</strong> </p><img src="images/lab2_2.png"
+                                                width="832" 
+                                              alt="html"><button type="button"
+                                              class="btn btn-info" style="background: #fd7e14"><a
+                                                href="https://f18-zpc.zdn.vn/4926075736511189538/7308d8cf6575ad2bf464.jpg" download="lab2_2.png"
+                                                style="color: white;">Download</a></button>
 
                                         </div>
                                       </div>

@@ -19,7 +19,7 @@ btn.forEach(function(button,index){
         //  .src lấy link ảnh
         // console.log(product)
 
-        var productName=product.querySelector("H1").innerText
+        var productName=product.querySelector("H2").innerText
         // đi vào lấy thẻ h1 luôn vì chỉ có 1 thẻ h1
         var productPrice=product.querySelector("span").innerText
         // console.log(productImg,productName,productPrice) 
