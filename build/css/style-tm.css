@@ -56,7 +56,7 @@
 }
 /* -----lab1------- */
 .btn-danger {
-  background-color: #fd7e14;
+  background-color: #f15d30;
   height: 35px;
 }
 
@@ -75,7 +75,7 @@
 
 .panel-heading {
   /* background-color: #4267b2; */
-  background-color: #fd7e14;
+  background-color: #f15d30;
   padding: 10px;
   color: white;
 }
@@ -111,12 +111,12 @@
 }
 
 .btn-success {
-  background-color: #fd7e14;
+  background-color: #f15d30;
 
 }
 
 .btn-danger {
-  background-color: #fd7e14;
+  background-color: #f15d30;
 }
 
 .btn-warning {
@@ -133,11 +133,11 @@
 }
 
 .btn-warning {
-  background-color: #fd7e14;
+  background-color: #f15d30;
 }
 
 .btn-primary1 {
-  background-color: #fd7e14;
+  background-color: #f15d30;
   color: #fff;
 }
 
@@ -170,7 +170,7 @@
   height: 350px;
   display: flex;
   justify-content: space-between;
-  background-color: #fd7e14;
+  background-color: #f15d30;
 
   padding: 12px;
 
@@ -217,7 +217,7 @@
 
 .product-item button:hover {
 
-  background-color: #fd7e14;
+  background-color: #f15d30;
 }
 
 
@@ -288,7 +288,7 @@
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #fd7e14;
+  background-color: #f15d30;
   color: #fff;
 
 
@@ -353,12 +353,20 @@
 
 /* -------start lab1 download-------- */
 .btn-info {
-  background: #fd7e14 !important;
+  background: #f15d30 !important;
   margin-top: 20px;
   margin-bottom: 20px;
+  height: 40px;
+
 }
 
 /* -------end lab1 download-------- */
-/* ----lab4------------ */
+/* ----Result------------ */
+.buttonresult{
+  background: #f15d30 !important;
+  border: #f15d30;
+  height: 40px;
+
+}
 
 /* ----------- */
