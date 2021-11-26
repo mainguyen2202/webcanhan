@@ -60,6 +60,16 @@
   height: 35px;
 }
 
+
+.container1 {
+  max-width: 1400px;
+
+  margin: auto;
+}
+.tabcontent1{
+  text-align: center;
+}
+
 /* --------- */
 
 
@@ -160,11 +170,7 @@
 
 }
 
-.container1 {
-  max-width: 1300px;
 
-  margin: auto;
-}
 
 .product-items {
   height: 350px;
