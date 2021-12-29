@@ -383,6 +383,34 @@
   height: 40px;
 
 }
+.col{
+ 
+  
+    margin-left: -28px !important;
+    margin-right: -28px !important;
+   
+   
+}
+a:hover {
+  /* color: #f15d30; */
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+a:hover, a:focus {
+    /* color: #3d5368; */
+    color:black;
+    text-decoration: none;
+}
+.card:hover {
+  /* box-shadow:   0 0 50px rgba(0, 0, 0, 0.3); */
+  box-shadow: -13px 20px 5px rgba(0, 0, 0, 0.3);
+  background-color: #c4c4c4;
+  color: #fff;
+
+}
+
 
 
 /* ----------- */
