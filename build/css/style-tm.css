@@ -406,8 +406,8 @@ a:hover, a:focus {
 .card:hover {
   /* box-shadow:   0 0 50px rgba(0, 0, 0, 0.3); */
   box-shadow: -13px 20px 5px rgba(0, 0, 0, 0.3);
-  background-color: #c4c4c4;
-  color: #fff;
+  background-color: #fff;
+  /* color: #fff; */
 
 }
 
